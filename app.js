@@ -4,7 +4,7 @@ const cors = require("cors");
 const express = require('express');
 const app = express();
 app.use(cors());
-var port = process.env.port || 8080;
+var port = process.env.PORT?process.env.PORT:9001;
 
 
 // var wp = new WPAPI({

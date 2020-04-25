@@ -60,7 +60,6 @@ app.get('/post/:id', function (req, res) {
     });
 });
 
-
-var server = app.listen(port, function () {
-    console.log('Node server is running.. on '+port);
+app.listen(port, function () {
+    console.log('Node server is running on '+port);
 });
